@@ -18,12 +18,14 @@
     list-style-type: none;
 }
 
+
 $o:Open Sans;
 $m:Montserrat;
 
 body {
     background-color: #E5E5E5;
 }
+
 
 .container {
     max-width: 1366px;
@@ -2663,7 +2665,7 @@ body {
         #F8F8F8;
 
     &>.info__header {
-        width: 100%;
+        width: 70%;
         height: auto;
         margin-left: 70px;
 
@@ -2714,9 +2716,10 @@ body {
     padding: 0px 0px 70px 0px;
 
     &>.next__info__header {
-        width: 100%;
+        width: 70%;
         height: auto;
         margin-left: 90px;
+        
 
         &>h1 {
             font-family: $m;
@@ -3845,3 +3848,4 @@ body {
         }
     }
 }
+
