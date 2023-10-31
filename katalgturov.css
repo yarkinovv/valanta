@@ -255,64 +255,6 @@ body {
   font-size: 15px;
   color: #4AD295;
 }
-.header > .header__info {
-  width: 100%;
-  height: auto;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(images/Mask\ Group\ \(1\).png) no-repeat center/cover;
-  padding: 104px 0px 123px 200px;
-  background-attachment: fixed;
-}
-.header > .header__info > h4 {
-  width: 249px;
-  font-family: Open Sans;
-  font-weight: 600;
-  font-size: 24px;
-  color: #fff;
-  border: 1px solid #fff;
-}
-.header > .header__info > h1 {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 45px;
-  color: #fff;
-  margin-top: 23px;
-}
-.header > .header__info > button {
-  width: 270px;
-  height: 60px;
-  background-color: rgba(255, 255, 255, 0.25);
-  border-radius: 2px;
-  transition: all 0.5s;
-  border: none;
-  margin-top: 40px;
-}
-.header > .header__info > button > a {
-  width: 100%;
-  height: auto;
-  line-height: 60px;
-  display: block;
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 16px;
-  color: #fff;
-}
-.header > .header__info > button:hover {
-  width: 270px;
-  height: 60px;
-  background-color: #fff;
-  border-radius: 2px;
-  border: none;
-}
-.header > .header__info > button:hover > a {
-  width: 100%;
-  height: auto;
-  line-height: 60px;
-  display: block;
-  font-family: Montserrat;
-  font-weight: 700;
-  font-size: 16px;
-  color: black;
-}
 
 .next__header {
   width: 100%;
@@ -385,51 +327,237 @@ body {
 .next__content {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  margin-top: 50px;
 }
-.next__content > .next__content__card {
-  max-width: 420px;
-  width: 100%;
-  height: 450px;
-  border: 1px solid transparent;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(Image/01_Valamar-Dubrovnik-President-Beach-Night_Dean-Tosovic_Valamar_riviera_dd\ 1.png) no-repeat center/cover;
-  margin: 10px;
-  text-align: center;
-}
-.next__content > .next__content__card > .next__content__card__header {
+.next__content > .next__content__header {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-.next__content > .next__content__card > .next__content__card__header > h4 {
+.next__content > .next__content__header > h1 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 45px;
+  color: #232323;
+}
+.next__content > .next__content__header > button {
   width: 140px;
+  height: 45px;
+  border: 1px solid #969696;
+  background-color: transparent;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+.next__content > .next__content__header > button > a {
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  display: block;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: #969696;
+}
+.next__content > .next__content__header > button:hover {
+  width: 140px;
+  height: 45px;
+  border: 1px solid transparent;
+  background-color: #969696;
+  border-radius: 2px;
+}
+.next__content > .next__content__header > button:hover > a {
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  display: block;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+}
+.next__content > .next__content__footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:first-child {
+  width: 327px;
+  height: 480px;
+  border: 1px solid transparent;
+}
+.next__content > .next__content__footer > .next__content__footer__card:first-child > .next__content__footer__card__aside {
+  width: 100%;
+  height: 50%;
+  background: url(images/mandarina\ 2\ \(1\).png);
+  overflow: hidden;
+}
+.next__content > .next__content__footer > .next__content__footer__card:first-child > .next__content__footer__card__aside > h4 {
+  width: 195px;
   height: 30px;
-  background-color: rgba(4, 4, 4, 0.35);
+  background-color: rgba(0, 0, 0, 0.35);
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Open Sans;
-  font-weight: 400;
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-  margin-top: 20px;
+  margin-top: 18px;
 }
-.next__content > .next__content__card > img {
-  width: 112px;
-  height: 24px;
-  margin-top: 113px;
-  cursor: pointer;
+.next__content > .next__content__footer > .next__content__footer__card:first-child > .next__content__footer__card__section {
+  width: 100%;
+  height: 50%;
+  background-color: #F8F8F8;
+  padding: 17px 20px;
 }
-.next__content > .next__content__card > h3 {
+.next__content > .next__content__footer > .next__content__footer__card:first-child > .next__content__footer__card__section > h1 {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 20px;
-  color: #FFFFFF;
-  margin-top: 36px;
+  color: #323232;
+}
+.next__content > .next__content__footer > .next__content__footer__card:first-child > .next__content__footer__card__section > p {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #848484;
+  margin-top: 30px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:first-child > .next__content__footer__card__section > h4 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 24px;
+  color: #DD4053;
+  margin-top: 32px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:first-child > .next__content__footer__card__section > h4 > span {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 12px;
+  color: #C9C9C9;
+}
+.next__content > .next__content__footer > .next__content__footer__card:nth-child(2) {
+  width: 327px;
+  height: 480px;
+  border: 1px solid transparent;
+}
+.next__content > .next__content__footer > .next__content__footer__card:nth-child(2) > .next__content__footer__card__aside {
+  width: 100%;
+  height: 50%;
+  background: url(images/1491655\ 1.png);
+  overflow: hidden;
+}
+.next__content > .next__content__footer > .next__content__footer__card:nth-child(2) > .next__content__footer__card__aside > h4 {
+  width: 195px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.35);
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:nth-child(2) > .next__content__footer__card__section {
+  width: 100%;
+  height: 50%;
+  background-color: #F8F8F8;
+  padding: 17px 20px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:nth-child(2) > .next__content__footer__card__section > h1 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  color: #323232;
+}
+.next__content > .next__content__footer > .next__content__footer__card:nth-child(2) > .next__content__footer__card__section > p {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #848484;
+  margin-top: 30px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:nth-child(2) > .next__content__footer__card__section > h4 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 24px;
+  color: #DD4053;
+  margin-top: 32px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:nth-child(2) > .next__content__footer__card__section > h4 > span {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 12px;
+  color: #C9C9C9;
+}
+.next__content > .next__content__footer > .next__content__footer__card:last-child {
+  width: 327px;
+  height: 480px;
+  border: 1px solid transparent;
+}
+.next__content > .next__content__footer > .next__content__footer__card:last-child > .next__content__footer__card__aside {
+  width: 100%;
+  height: 50%;
+  background: url(images/276398231\ 1.png);
+  overflow: hidden;
+}
+.next__content > .next__content__footer > .next__content__footer__card:last-child > .next__content__footer__card__aside > h4 {
+  width: 195px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.35);
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 18px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:last-child > .next__content__footer__card__section {
+  width: 100%;
+  height: 50%;
+  background-color: #F8F8F8;
+  padding: 17px 20px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:last-child > .next__content__footer__card__section > h1 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  color: #323232;
+}
+.next__content > .next__content__footer > .next__content__footer__card:last-child > .next__content__footer__card__section > p {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: #848484;
+  margin-top: 30px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:last-child > .next__content__footer__card__section > h4 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 24px;
+  color: #DD4053;
+  margin-top: 32px;
+}
+.next__content > .next__content__footer > .next__content__footer__card:last-child > .next__content__footer__card__section > h4 > span {
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 12px;
+  color: #C9C9C9;
 }
 
 .center {
@@ -655,4 +783,4 @@ body {
 }
 
 /*? footer__body end */
-/*! footer end *//*# sourceMappingURL=oteli.css.map */
+/*! footer end *//*# sourceMappingURL=katalgturov.css.map */

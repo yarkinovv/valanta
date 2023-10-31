@@ -439,3 +439,141 @@ body {
         }
     }
 }
+
+
+.footer {
+    width: 1400px;
+    height: 260px;
+    flex-shrink: 0;
+    background: #F8F8F8;
+    margin-top: 90px;
+    padding: 60px 85px;
+}
+
+/*? footer__head start */
+
+.footer__head {
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__head-info {
+    display: flex;
+    gap: 80px;
+}
+
+.footer__head-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer__head-links a {
+    color: #3E3E3E;
+    font-family: "Suisse Int'l";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__head-links a:hover {
+    transition: all 0.2s;
+    color: #DD4053;
+}
+
+.footer__head-title1 {
+    color: #3E3E3E;
+    font-family: "Suisse Int'l";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.footer__head-text {
+    margin-top: 5px;
+    color: #3E3E3E;
+    font-family: "Suisse Int'l";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__head-number {
+    color: #3E3E3E;
+    font-family: "Suisse Int'l";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.footer__head-title2 {
+    color: #3E3E3E;
+    font-family: "Suisse Int'l";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-top: 25px;
+}
+
+.footer__head-line {
+    width: 1170px;
+    height: 1px;
+    flex-shrink: 0;
+    border-radius: 2px;
+    background: rgba(29, 29, 29, 0.20);
+    margin-top: 40px;
+}
+
+/*? footer__head end */
+
+/*? footer__body start */
+
+.footer__body {
+    width: 1170px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__head-logo {
+    width: 156px;
+    height: 86px;
+    flex-shrink: 0;
+}
+
+.footer__body-title {
+    color: rgba(62, 62, 62, 0.50);
+    font-family: "Suisse Int'l";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__body-icons i {
+    margin: 0 5px;
+    color: #808080;
+    font-size: 19px;
+}
+
+.footer__body-icons i:hover {
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #DD4053;
+}
+
+/*? footer__body end */
+
+/*! footer end */

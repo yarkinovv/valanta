@@ -323,73 +323,8 @@ body {
         }
     }
 
-    &>.header__info {
-        width: 100%;
-        height: auto;
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 10%), rgba(0, 0, 0, 80%)), url(images/Mask\ Group\ \(1\).png) no-repeat center / cover;
-        padding: 104px 0px 123px 200px;
-        background-attachment: fixed;
-
-        &>h4 {
-            width: 249px;
-            font-family: $o;
-            font-weight: 600;
-            font-size: 24px;
-            color: #fff;
-            border: 1px solid #fff;
-        }
-
-        &>h1 {
-            font-family: $m;
-            font-weight: 500;
-            font-size: 45px;
-            color: #fff;
-            margin-top: 23px;
-        }
-
-        &>button {
-            width: 270px;
-            height: 60px;
-            background-color:
-                rgba(255, 255, 255, 0.25);
-            border-radius: 2px;
-            transition: all 0.5s;
-            border: none;
-            margin-top: 40px;
-
-            &>a {
-                width: 100%;
-                height: auto;
-                line-height: 60px;
-                display: block;
-                font-family: $m;
-                font-weight: 700;
-                font-size: 16px;
-                color: #fff;
-            }
-        }
-
-        &>button:hover {
-            width: 270px;
-            height: 60px;
-            background-color:
-                #fff;
-            border-radius: 2px;
-            border: none;
-
-            &>a {
-                width: 100%;
-                height: auto;
-                line-height: 60px;
-                display: block;
-                font-family: $m;
-                font-weight: 700;
-                font-size: 16px;
-                color: black;
-            }
-        }
-    }
 }
+
 
 .next__header {
     width: 100%;
@@ -468,62 +403,285 @@ body {
     }
 }
 
+
 .next__content {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    margin-top: 50px;
 
-    &>.next__content__card {
-        max-width: 420px;
+    &>.next__content__header {
         width: 100%;
-        height: 450px;
-        border: 1px solid transparent;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(Image/01_Valamar-Dubrovnik-President-Beach-Night_Dean-Tosovic_Valamar_riviera_dd\ 1.png) no-repeat center / cover;
-        margin: 10px;
-        text-align: center;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
 
-        &>.next__content__card__header {
-            width: 100%;
-            height: auto;
+        &>h1 {
+            font-family: $m;
+            font-weight: 500;
+            font-size: 45px;
+            color: #232323;
+        }
 
-            &>h4 {
-                width: 140px;
-                height: 30px;
-                background-color:
-                    rgba(4, 4, 4, 0.35);
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                font-family: $o;
-                font-weight: 400;
+        &>button {
+            width: 140px;
+            height: 45px;
+            border: 1px solid #969696;
+            background-color: transparent;
+            border-radius: 2px;
+            transition: all 0.5s;
+
+            &>a {
+                width: 100%;
+                height: 100%;
+                line-height: 45px;
+                display: block;
+                font-family: $m;
+                font-weight: 700;
                 font-size: 14px;
-                color: rgba(255, 255, 255, 1);
-                margin-top: 20px;
+                color:
+                    #969696;
             }
         }
 
-        &>img {
-            width: 112px;
-            height: 24px;
-            margin-top: 113px;
-            cursor: pointer;
+        &>button:hover {
+            width: 140px;
+            height: 45px;
+            border: 1px solid transparent;
+            background-color: #969696;
+            border-radius: 2px;
+
+            &>a {
+                width: 100%;
+                height: 100%;
+                line-height: 45px;
+                display: block;
+                font-family: $m;
+                font-weight: 700;
+                font-size: 14px;
+                color:
+                    #fff;
+            }
+        }
+    }
+
+    &>.next__content__footer {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        &>.next__content__footer__card:first-child {
+            width: 327px;
+            height: 480px;
+            border: 1px solid transparent;
+
+            &>.next__content__footer__card__aside {
+                width: 100%;
+                height: 50%;
+                background: url(images/mandarina\ 2\ \(1\).png);
+                overflow: hidden;
+
+                &>h4 {
+                    width: 195px;
+                    height: 30px;
+                    background-color: rgba(0, 0, 0, 0.35);
+                    font-family: $o;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 18px;
+                }
+            }
+
+            &>.next__content__footer__card__section {
+                width: 100%;
+                height: 50%;
+                background-color:
+                    #F8F8F8;
+                padding: 17px 20px;
+
+                &>h1 {
+                    font-family: $m;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color:
+                        #323232;
+                }
+
+                &>p {
+                    font-family: $o;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color:
+                        #848484;
+                    margin-top: 30px;
+                }
+
+                &>h4 {
+                    font-family: $m;
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: #DD4053;
+                    margin-top: 32px;
+
+                    &>span {
+                        font-family: $o;
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #C9C9C9;
+                    }
+                }
+            }
         }
 
-        &>h3 {
-            font-family: $m;
-            font-weight: 500;
-            font-size: 20px;
-            color:
-                #FFFFFF;
-            margin-top: 36px;
+        &>.next__content__footer__card:nth-child(2) {
+            width: 327px;
+            height: 480px;
+            border: 1px solid transparent;
+
+            &>.next__content__footer__card__aside {
+                width: 100%;
+                height: 50%;
+                background: url(images/1491655\ 1.png);
+                overflow: hidden;
+
+                &>h4 {
+                    width: 195px;
+                    height: 30px;
+                    background-color: rgba(0, 0, 0, 0.35);
+                    font-family: $o;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 18px;
+                }
+            }
+
+            &>.next__content__footer__card__section {
+                width: 100%;
+                height: 50%;
+                background-color:
+                    #F8F8F8;
+                padding: 17px 20px;
+
+                &>h1 {
+                    font-family: $m;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color:
+                        #323232;
+                }
+
+                &>p {
+                    font-family: $o;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color:
+                        #848484;
+                    margin-top: 30px;
+                }
+
+                &>h4 {
+                    font-family: $m;
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: #DD4053;
+                    margin-top: 32px;
+
+                    &>span {
+                        font-family: $o;
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #C9C9C9;
+                    }
+                }
+            }
+        }
+
+        &>.next__content__footer__card:last-child {
+            width: 327px;
+            height: 480px;
+            border: 1px solid transparent;
+
+            &>.next__content__footer__card__aside {
+                width: 100%;
+                height: 50%;
+                background: url(images/276398231\ 1.png);
+                overflow: hidden;
+
+                &>h4 {
+                    width: 195px;
+                    height: 30px;
+                    background-color: rgba(0, 0, 0, 0.35);
+                    font-family: $o;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 18px;
+                }
+            }
+
+            &>.next__content__footer__card__section {
+                width: 100%;
+                height: 50%;
+                background-color:
+                    #F8F8F8;
+                padding: 17px 20px;
+
+                &>h1 {
+                    font-family: $m;
+                    font-weight: 500;
+                    font-size: 20px;
+                    color:
+                        #323232;
+                }
+
+                &>p {
+                    font-family: $o;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color:
+                        #848484;
+                    margin-top: 30px;
+                }
+
+                &>h4 {
+                    font-family: $m;
+                    font-weight: 500;
+                    font-size: 24px;
+                    color: #DD4053;
+                    margin-top: 32px;
+
+                    &>span {
+                        font-family: $o;
+                        font-weight: 600;
+                        font-size: 12px;
+                        color: #C9C9C9;
+                    }
+                }
+            }
         }
     }
 }
+
 
 .center {
     width: 100%;
