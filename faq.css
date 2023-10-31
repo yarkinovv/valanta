@@ -352,7 +352,7 @@ body {
   margin-left: 20px;
 }
 .footer {
-  width: 1400px;
+  width: 100%px;
   height: 260px;
   flex-shrink: 0;
   background: #F8F8F8;
