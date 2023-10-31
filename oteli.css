@@ -255,11 +255,69 @@ body {
   font-size: 15px;
   color: #4AD295;
 }
+.header > .header__info {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(images/Mask\ Group\ \(1\).png) no-repeat center/cover;
+  padding: 104px 0px 123px 200px;
+  background-attachment: fixed;
+}
+.header > .header__info > h4 {
+  width: 249px;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.header > .header__info > h1 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 45px;
+  color: #fff;
+  margin-top: 23px;
+}
+.header > .header__info > button {
+  width: 270px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+  transition: all 0.5s;
+  border: none;
+  margin-top: 40px;
+}
+.header > .header__info > button > a {
+  width: 100%;
+  height: auto;
+  line-height: 60px;
+  display: block;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+.header > .header__info > button:hover {
+  width: 270px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 2px;
+  border: none;
+}
+.header > .header__info > button:hover > a {
+  width: 100%;
+  height: auto;
+  line-height: 60px;
+  display: block;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  color: black;
+}
 
 .next__header {
   width: 100%;
   height: auto;
-  padding: 30px 0px 0px 115px;
+  padding: 30px 0px 0px 114px;
 }
 .next__header > h4 {
   font-family: Montserrat;
@@ -277,80 +335,193 @@ body {
 .content {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 70px 0px;
+  padding: 50px 115px;
 }
-.content > aside {
-  width: 416px;
+.content > .content__header {
+  width: 100%;
   height: auto;
-  border: 1px solid transparent;
 }
-.content > aside > h1 {
+.content > .content__header > h1 {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 31px;
   color: #232323;
 }
-.content > aside > h2 {
-  width: 310px;
-  height: 400px;
-  font-family: Montserrat;
-  background: url(Image/lake-bled-castle-wedding-1024x768\ 3.png) no-repeat center/cover;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 400px;
-  margin-left: 50px;
-}
-.content > section {
-  width: 800px;
-  height: 399px;
-  border: 1px solid transparent;
-}
-.content > section > .secrtion__card:first-child {
-  width: 100%;
-  height: 140px;
-  border-bottom: 1px solid #D0D0D0;
-  display: flex;
-  flex-direction: column;
-}
-.content > section > .secrtion__card:first-child > h4 {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 22px;
-  color: #323232;
-}
-.content > section > .secrtion__card:first-child > p {
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  color: #323232;
-}
-.content > section > .secrtion__card {
+.content > .content__footer {
   width: 100%;
   height: auto;
-  padding: 30px 38px;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid #D0D0D0;
+  padding: 50px 0px;
 }
-.content > section > .secrtion__card > h4 {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 22px;
-  color: #323232;
-}
-.content > section > .secrtion__card > p {
+.content > .content__footer input {
+  width: 220px;
+  height: 50px;
+  padding: 0px 20px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 46, 46, 0.2);
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 16px;
-  color: #323232;
-  margin-left: 20px;
+  font-size: 14px;
+  color: rgb(75, 75, 75);
 }
+.content > .content__footer > select {
+  width: 220px;
+  height: 50px;
+  padding: 0px 20px;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 46, 46, 0.2);
+  cursor: pointer;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(75, 75, 75);
+}
+
+.next__content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.next__content > .next__content__card {
+  max-width: 420px;
+  width: 100%;
+  height: 450px;
+  border: 1px solid transparent;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url(Image/01_Valamar-Dubrovnik-President-Beach-Night_Dean-Tosovic_Valamar_riviera_dd\ 1.png) no-repeat center/cover;
+  margin: 10px;
+  text-align: center;
+}
+.next__content > .next__content__card > .next__content__card__header {
+  width: 100%;
+  height: auto;
+}
+.next__content > .next__content__card > .next__content__card__header > h4 {
+  width: 140px;
+  height: 30px;
+  background-color: rgba(4, 4, 4, 0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+.next__content > .next__content__card > img {
+  width: 112px;
+  height: 24px;
+  margin-top: 113px;
+  cursor: pointer;
+}
+.next__content > .next__content__card > h3 {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-top: 36px;
+}
+
+.center {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+}
+.center > .center__header {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.center > .center__header > button {
+  width: 270px;
+  height: 60px;
+  border-radius: 2px;
+  border: 1px solid rgb(150, 150, 150);
+  transition: all 0.5s;
+}
+.center > .center__header > button > a {
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  display: block;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+}
+.center > .center__header > button:hover {
+  width: 270px;
+  height: 60px;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  background-color: rgb(150, 150, 150);
+}
+.center > .center__header > button:hover > a {
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+  display: block;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+.center > .center__footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+}
+.center > .center__footer > .center__footer__cantent {
+  max-width: 477px;
+  width: 100%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.center > .center__footer > .center__footer__cantent > h3 {
+  width: 180px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(150, 150, 150);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.center > .center__footer > .center__footer__cantent > h3 > span {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: rgb(51, 51, 51);
+}
+.center > .center__footer > .center__footer__cantent > h3 > input {
+  width: 50px;
+  height: 20px;
+  border-radius: 2px solid rgb(213, 213, 213);
+  outline: none;
+}
+.center > .center__footer > .center__footer__cantent > h4 {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgb(150, 150, 150);
+}
+
 .footer {
   width: 100%;
   height: 260px;
@@ -491,4 +662,6 @@ body {
 
 /*! footer end */
 
-/*# sourceMappingURL=faq.css.map */
+
+
+/*# sourceMappingURL=oteli.css.map */
