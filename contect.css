@@ -336,6 +336,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .Rectangle3 .Rectangle2 {
   width: 500px;
