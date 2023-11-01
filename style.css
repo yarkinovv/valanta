@@ -257,10 +257,20 @@ body {
 }
 .header > .header__info {
   width: 100%;
-  height: auto;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(images/Mask\ Group\ \(1\).png) no-repeat center/cover;
-  padding: 104px 0px 123px 200px;
-  background-attachment: fixed;
+  height: 700px;
+  overflow: hidden;
+  padding: 200px;
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+}
+.header > .header__info > video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
 }
 .header > .header__info > h4 {
   width: 249px;
